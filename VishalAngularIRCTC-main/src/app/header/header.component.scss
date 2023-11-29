@@ -1,0 +1,70 @@
+.example-spacer {
+  border: 1px solid green;
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  background-color: rgba(40, 92, 157, 0.61);
+  color: #fff;
+}
+
+.chat-bot-text {
+  p {
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+.header-image {
+  img {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 50px;
+    width: 60px;
+  }
+}
+
+.profile-image {
+  display: flex;
+  margin-right: 1rem;
+
+  img {
+    // width: 5.75rem;
+    // height: 3.5rem;
+    // border-radius: 1.5rem;
+    // margin-left: -40px;
+
+    width: 55px;
+    height: auto;
+    border-radius: 1.5rem;
+    margin-left: -40px;
+    padding: 18px;
+
+
+  }
+}
+
+#disha-text {
+  font-size: large;
+  margin-left: -20px;
+}
+
+.chat-bot-text {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.hamburger-btn {
+
+  //   width: 50px;
+  button {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    height: 28px;
+    border: 0;
+    // margin-bottom: 2px;
+  }
+}

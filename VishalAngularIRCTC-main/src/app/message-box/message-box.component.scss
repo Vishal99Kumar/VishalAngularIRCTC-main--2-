@@ -1,0 +1,134 @@
+input {
+  border-radius: 0.5rem;
+  width: 310px;
+  height: 40px;
+  // margin-bottom: 0px;
+  // margin-top: 10px;
+  margin-right: 10px;
+  border: none;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.right-message {
+  color: black;
+  text-align: right;
+  background-color:rgba(135, 188, 245, 0.61) ;
+  border-radius: 5px;
+  padding: 8px;
+  margin:7px;
+  border-radius: 8px 8px 0px;
+  top: 70px;
+  right: 490px;
+  max-width:fit-content;
+  margin-left: auto;
+  font-size: 12px;
+}
+
+
+
+.left-message {
+  color: black;
+  text-align:left;
+  padding: 8px;
+  margin: 7px;
+  //background-color:rgba(218, 231, 245, 0.61) ; Original Color
+  background-color:rgba(242, 247, 253, 0.61) ;
+   border-top-left-radius: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    max-width: fit-content;
+    font-size: 12px;
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+  list-style: none;
+}
+
+
+
+
+.chat-window {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // background-color:red;
+
+ 
+}
+
+
+.chat-window-display {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 29rem;
+
+ 
+}
+
+.chat-window>* {
+  padding: 10px 20px;
+  //background-color:red;
+
+}
+
+.chat-session {
+  flex-grow: 1;
+  display: flex;
+  //overflow: hidden;
+
+  // content: "";
+  //   clear: both;
+  //   display: table;
+  // background-color:red;
+}
+
+.message-list {
+  // background-color:red;
+  flex-grow: 1;
+  overflow-y: hidden !important;
+  //overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+// form {
+//   background-color: rgba(40, 92, 157, 0.61);
+//   height: 70px;
+//   position:relative;
+
+// }
+
+.send-icon {
+  color: white;
+ 
+}
+
+
+.message-input-form {
+  display: flex;
+  align-items: center; 
+  background-color: rgba(40, 92, 157, 0.61);
+  height: 60px;
+  padding: 10px 20px; 
+}

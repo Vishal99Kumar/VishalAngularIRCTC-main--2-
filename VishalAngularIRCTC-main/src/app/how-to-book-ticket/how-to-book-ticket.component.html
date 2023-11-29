@@ -1,0 +1,30 @@
+<mat-divider style="margin-top:5px;"></mat-divider>
+<div class="askbook-ticket">
+    <!-- <p>My Application Status</p> -->
+    <p>Airport Guidelines</p>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon class="Reimbursement">question_answer</mat-icon>
+            <!-- <span>Search Train</span> -->
+            <!-- <a href="https://esewa.punjab.gov.in/trackStatus" class="custom-link"> -->
+                <p><a href="https://esewa.punjab.gov.in/trackStatus" 
+                class="custom-link"></a>Guidelines</p>
+            <!-- </a> -->
+        </button>
+         <button mat-menu-item>
+            <mat-icon>contact_support</mat-icon>
+            <span>FAQ</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>feedback</mat-icon>
+            <span>Feedback</span>
+        </button>
+        <!-- <button mat-menu-item>
+            <mat-icon>check_circle_outline</mat-icon>
+            <span>Cab Request</span>
+        </button>  -->
+    </mat-menu>
+</div>

@@ -1,0 +1,148 @@
+<ng-container *ngIf="display">
+    <app-welcome-text></app-welcome-text>
+    <app-content></app-content>
+    <app-how-to-book-ticket></app-how-to-book-ticket>
+</ng-container>
+<main *ngIf="!display" [ngClass]="display == true ? 'chat-window' : 'chat-window-display'">
+    <section class="chat-session">
+        <ul class="message-list">
+            <li class="user-message"
+                [ngClass]="{'left-message': message?.['origin'] != 'me', 'right-message': message?.['origin'] == 'me'}"
+                *ngFor="let message of messages">
+                <span>{{ message.text }}</span>
+            </li>
+        </ul>
+    </section>
+</main>
+<form (ngSubmit)="sendMessage()" class="message-input-form">
+    <!-- <label for="message">Enter your message:</label> -->
+  <input type="text" id="message" name="message" [(ngModel)]="message" placeholder="Chat with AI Chatbot"
+        (input)="onInputChange($event)">
+    <!-- <button type="submit">Send</button> -->
+
+
+    <!-- <div>
+        <p>Powered by <a href="https://glorinz.com/"> Glorius Insight</a></p>
+    </div> -->
+
+
+   <button mat-icon-button class="example-icon">
+        <!-- <mat-icon>Send</mat-icon> -->
+        <mat-icon class="send-icon">send</mat-icon>
+    </button>
+    <!-- <div>
+        <p>Powered by <a href="https://glorinz.com/"> Glorius Insight</a></p>
+    </div> -->
+</form>
+
+
+
+
+
+
+
+
+
+<!--Test1C<ng-container *ngIf="display">
+    <app-welcome-text></app-welcome-text>
+    <app-content></app-content>
+    <app-how-to-book-ticket></app-how-to-book-ticket>
+</ng-container>
+<main *ngIf="!display" [ngClass]="display == true ? 'chat-window' : 'chat-window-display'">
+    <section class="chat-session">
+        <ul class="message-list">
+            <li class="user-message"
+                [ngClass]="{'left-message': message?.['origin'] != 'me', 'right-message': message?.['origin'] == 'me'}"
+                *ngFor="let message of messages">
+                <span>{{ message.text }}</span>
+            </li>
+        </ul>
+    </section>
+</main>
+<form (ngSubmit)="sendMessage()" class="message-input-form">1C-->
+    <!-- <label for="message">Enter your message:</label> -->
+  <!--2C  <input type="text" id="message" name="message" [(ngModel)]="message" placeholder="Chat with AI Chatbot"
+        (input)="onInputChange($event)">2C-->
+    <!-- <button type="submit">Send</button> -->
+
+
+    <!-- <div>
+        <p>Powered by <a href="https://glorinz.com/"> Glorius Insight</a></p>
+    </div> -->
+
+
+   <!--3C <button mat-icon-button class="example-icon">3C-->
+        <!-- <mat-icon>Send</mat-icon> -->
+    <!--4C    <mat-icon class="send-icon">send</mat-icon>
+    </button>4C-->
+    <!-- <div>
+        <p>Powered by <a href="https://glorinz.com/"> Glorius Insight</a></p>
+    </div> -->
+<!--5C</form>5C-->
+
+
+
+
+
+
+
+
+
+<!--Test2 <ng-container *ngIf="display">
+    <app-welcome-text></app-welcome-text>
+    <app-content></app-content>
+    <app-how-to-book-ticket></app-how-to-book-ticket>
+</ng-container>
+ <main *ngIf="!display" [ngClass]="display == true ? 'chat-window' : 'chat-window-display'">
+    <section class="chat-session">
+        <ul class="message-list">
+            <li class="user-message"
+                [ngClass]="{'left-message': message?.['origin'] != 'me', 'right-message': message?.['origin'] == 'me'}"
+                *ngFor="let message of messages">
+                <span>{{ message.text }}</span>
+            </li>
+        </ul>
+    </section>
+</main> -->
+<!-- <main *ngIf="!display" [ngClass]="display == true ? 'chat-window' : 'chat-window-display'">
+    <section class="chat-session">
+    <ul class="message-list">
+    <li class="user-message"
+              [ngClass]="{'left-message': message?.['origin'] != 'me', 'right-message': message?.['origin'] == 'me'}"
+              *ngFor="let message of messages">
+    <span *ngIf="message?.['origin'] != 'me'">{{ message.text }}</span> -->
+    <!-- <ng-container *ngIf="message?.['origin'] == 'Server'"> -->
+    <!-- Check if the response contains an ordered list -->
+    <!-- <ng-container *ngIf="containsOrderedList(message.text); else defaultResponse">
+    <div [innerHTML]="renderOrderedList(message.text)"></div>
+    </ng-container>
+    <ng-template #defaultResponse> -->
+    <!-- If no ordered list, render the response as a single block -->
+                <!-- {{ message.text }}
+    </ng-template>
+    </ng-container>
+    </li>
+    </ul>
+    </section>
+    </main>
+
+<form (ngSubmit)="sendMessage()" class="message-input-form"> -->
+    <!-- <label for="message">Enter your message:</label> -->
+    <!-- <input type="text" id="message" name="message" [(ngModel)]="message" placeholder="Chat with AI Chatbot"
+        (input)="onInputChange($event)"> -->
+    <!-- <button type="submit">Send</button> -->
+
+
+    <!-- <div>
+        <p>Powered by <a href="https://glorinz.com/"> Glorius Insight</a></p>
+    </div> -->
+
+
+    <!-- <button mat-icon-button class="example-icon"> -->
+        <!-- <mat-icon>Send</mat-icon> -->
+        <!-- <mat-icon class="send-icon">send</mat-icon>
+    </button> -->
+    <!-- <div>
+        <p>Powered by <a href="https://glorinz.com/"> Glorius Insight</a></p>
+    </div> -->
+<!-- </form> -->

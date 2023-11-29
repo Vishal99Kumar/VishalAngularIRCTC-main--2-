@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    /* styles.css or your custom CSS file */
+    //background-image: url('assets/background.png'); (For Punjab Govt)
+    background-image: url('assets/BackgroundDelhi.png'); //(For Hamad Airport)
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* optional, makes the background fixed while scrolling */
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+    background: #eaeaee;
+    box-shadow: inset 0 0 4px rgba(40, 92, 157, 0.61);
+    height: 6px;
+    //overflow-y: scroll;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(40, 92, 157, 0.61);
+    border-radius: 10px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
