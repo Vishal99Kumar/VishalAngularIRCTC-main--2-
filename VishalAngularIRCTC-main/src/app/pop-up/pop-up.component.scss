@@ -55,6 +55,12 @@
     color:white;
     cursor: pointer;
     padding-right: 5rem !important;
+    color: black;
     // background-color: aqua;
 }
 
+@media only screen and (max-device-width: 990px){
+    .profile-container {
+        width: 19rem;
+    }
+}
