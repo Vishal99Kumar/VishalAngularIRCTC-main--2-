@@ -35,6 +35,7 @@ export class AppComponent {
 
         dialogConfig.disableClose = true;
         dialogConfig.autoFocus = true;
+        dialogConfig.backdropClass = "blurClass",
 
         this.dialog.open(PopUpComponent, dialogConfig);
   }
