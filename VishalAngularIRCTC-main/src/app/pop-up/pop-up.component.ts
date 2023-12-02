@@ -11,7 +11,10 @@ export interface ModalData {
   templateUrl: './pop-up.component.html',
   styleUrls: ['./pop-up.component.scss']
 })
+
 export class PopUpComponent implements OnInit {
+  
+  display:boolean = true;
   constructor(
     // public dialogRef: MatDialogRef<PopUpComponent>,
     // @Inject(MAT_DIALOG_DATA) public data: ModalData
@@ -21,5 +24,12 @@ export class PopUpComponent implements OnInit {
   dialogeClose(): void {
     this.dialogRef.close();
   }
-  ngOnInit() {}
+  ngOnInit() {
+    this.dataService.sharedVariable$.subscribe((value) => {
+      if (value) {
+        this.display = value;
+      }
+      //console.log(this.display);
+    });
+  }
 }

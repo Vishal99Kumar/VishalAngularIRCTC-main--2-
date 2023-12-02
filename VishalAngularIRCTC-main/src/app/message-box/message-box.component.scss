@@ -80,8 +80,8 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   min-height: 29rem;
-
- 
+  max-height: 29rem;
+  overflow-y: scroll; 
 }
 
 .chat-window>* {
@@ -131,4 +131,9 @@ ul {
   background-color: rgba(40, 92, 157, 0.61);
   height: 60px;
   padding: 10px 20px; 
+}
+
+.testScroll{
+  max-height: 26.8rem;
+  overflow-y: auto;
 }
