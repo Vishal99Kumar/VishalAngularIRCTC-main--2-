@@ -26,7 +26,7 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 import { ChatServiceService } from './chat-service.service';
 import { MessageServiceService } from './message-service.service';
 import { DataShareService } from './data-share.service';
-
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -55,7 +55,8 @@ import { DataShareService } from './data-share.service';
     MatDialogModule, 
     MatMenuModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatExpansionModule
   ],
   exports: [
     // HeaderComponent,

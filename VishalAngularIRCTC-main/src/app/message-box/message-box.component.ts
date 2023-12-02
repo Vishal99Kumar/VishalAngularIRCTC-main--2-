@@ -35,7 +35,8 @@ throw new Error('Method not implemented.');
         this.display = value;
         this.messages = [];
       }
-      console.log(this.display);
+      this.dataService.updateSharedVariable(this.display);
+      //console.log(this.display);
     });
   }
   ngOnInit() {
@@ -52,7 +53,8 @@ throw new Error('Method not implemented.');
       origin: 'me',
     });
     this.display = false;
-    this.dataService.setOption('Display', this.display);
+    this.dataService.updateSharedVariable(this.display);
+    //this.dataService.setOption('Display', this.display);
     this.msg.postData({ message: this.message }).subscribe((response) => {
       console.log('Response from backend:', response.answer.content);
       this.responseOnServer = response.answer.content;

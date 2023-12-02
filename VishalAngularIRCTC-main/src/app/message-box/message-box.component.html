@@ -1,8 +1,8 @@
-<ng-container *ngIf="display">
+<div *ngIf="display" class="testScroll">
     <app-welcome-text></app-welcome-text>
     <app-content></app-content>
-    <app-how-to-book-ticket></app-how-to-book-ticket>
-</ng-container>
+    <app-how-to-book-ticket></app-how-to-book-ticket>  
+</div>
 <main *ngIf="!display" [ngClass]="display == true ? 'chat-window' : 'chat-window-display'">
     <section class="chat-session">
         <ul class="message-list">
@@ -14,6 +14,7 @@
         </ul>
     </section>
 </main>
+<div id="bootomText">
 <form (ngSubmit)="sendMessage()" class="message-input-form">
     <!-- <label for="message">Enter your message:</label> -->
   <input type="text" id="message" name="message" [(ngModel)]="message" placeholder="Chat with AI Chatbot"
@@ -34,6 +35,7 @@
         <p>Powered by <a href="https://glorinz.com/"> Glorius Insight</a></p>
     </div> -->
 </form>
+</div>
 
 
 
