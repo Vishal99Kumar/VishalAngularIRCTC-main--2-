@@ -45,3 +45,10 @@
 // .footer a:hover {
 // text-decoration: underline;
 // }
+
+@media only screen and (max-device-width: 990px){
+    .footer {
+        width: 19rem;
+        margin: inherit;
+    }
+}
