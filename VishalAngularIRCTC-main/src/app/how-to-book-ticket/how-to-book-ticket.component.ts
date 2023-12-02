@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatAccordion } from "@angular/material/expansion";
 
 @Component({
   selector: 'app-how-to-book-ticket',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./how-to-book-ticket.component.scss']
 })
 export class HowToBookTicketComponent {
-
+  @ViewChild(MatAccordion) accordion: MatAccordion;
 }

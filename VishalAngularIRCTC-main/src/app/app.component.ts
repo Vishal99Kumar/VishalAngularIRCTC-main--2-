@@ -13,6 +13,7 @@ export class AppComponent {
   isOpen: boolean = false;
   name: string = 'test';
   color: string = 'test';
+  blurEffect: boolean = false;
   
   constructor(public dialog: MatDialog) {}
   openChatBox() {
@@ -28,13 +29,7 @@ export class AppComponent {
   }
 
   openDialog(): void {
-    // const dialogRef = this.dialog.open(PopUpComponent, {
-    //   width: '400px',
-    //   data: { name: this.name, color: this.color },
-    // });
-    // dialogRef.afterClosed().subscribe((res) => {
-    //   this.color = res;
-    // });
+    this.blurEffect = true;
 
     const dialogConfig = new MatDialogConfig();
 

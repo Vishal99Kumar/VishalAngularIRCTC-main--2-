@@ -4,7 +4,7 @@
     max-height: 100%;
     // max-height: 800px;
     margin: auto;
-    display: grid;
+    //display: grid;
     // border: 2px solid black;
 
 
@@ -12,6 +12,10 @@
     // background-image: url('../assets/background.png') no-repeat center center fixed;
     // position: relative;
 
+}
+
+.close-icon{
+    font-size: 3rem !important;
 }
 
 .app-content {
@@ -25,17 +29,23 @@
 
 
 
-// .profile-container {
-//     overflow-y: scroll;
-//     overflow-x: hidden;
-//     max-height: 500px;
-// }
+.profile-container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    //max-height: 500px;
+    //position: absolute;
+    height: 37rem;
+}
 
 // .app-content footer {
 //     position: relative;
 
 //     height: auto;
 // }
+.testScroll{
+    max-height: 19rem;
+    overflow-y: auto;
+}
 
 
 #close {
@@ -44,6 +54,7 @@
     right:5px;
     color:white;
     cursor: pointer;
+    padding-right: 5rem !important;
     // background-color: aqua;
 }
 

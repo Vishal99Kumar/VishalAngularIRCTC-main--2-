@@ -9,7 +9,7 @@ import { DataShareService } from '../data-share.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  Display: Boolean = true;
+  Display: boolean = true;
   constructor(
     private dialog: MatDialog,
     private dataService: DataShareService
