@@ -25,11 +25,6 @@ export class PopUpComponent implements OnInit {
     this.dialogRef.close();
   }
   ngOnInit() {
-    this.dataService.sharedVariable$.subscribe((value) => {
-      if (value) {
-        this.display = value;
-      }
-      //console.log(this.display);
-    });
+
   }
 }

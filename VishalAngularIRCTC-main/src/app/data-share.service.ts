@@ -15,11 +15,11 @@ export class DataShareService {
     return this.data;
   }
   constructor() {}
-  private sharedVariableSubject = new BehaviorSubject<boolean>(true);
+  private sharedVariableSubject = new BehaviorSubject<any>(null);
   sharedVariable$ = this.sharedVariableSubject.asObservable();
 
-  updateSharedVariable(newValue: boolean) {
+  updateSharedVariable(newValue: any) {
     this.sharedVariableSubject.next(newValue);
-    //console.log('vishal', newValue);
+    console.log('vishal', newValue);
   }
 }
