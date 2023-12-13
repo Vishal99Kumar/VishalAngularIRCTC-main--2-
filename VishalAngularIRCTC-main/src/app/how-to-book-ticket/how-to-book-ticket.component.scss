@@ -1,27 +1,31 @@
 .askbook-ticket {
-    display: flex;
-    margin-top: 0rem;
-    // margin-top:2rem;
-    align-items: center;
+  display: flex;
+  margin-top: 0rem;
+  // margin-top:2rem;
+  align-items: center;
 
-    p {
-        margin: 0px 0px 0px 4px;
-        color: rgb(8, 8, 8);
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration:none;
-    }
+  p {
+    margin: 0px 0px 0px 4px;
+    color: rgb(8, 8, 8);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
 
 }
 
-.Reimbursement{
-    margin-bottom: 15px;
+.Reimbursement {
+  margin-bottom: 15px;
 }
 
 /////////////////////////////////////////////////////////////////
 
 
-.example-headers-align .mat-expansion-panel-header-title,
+// .example-headers-align .mat-expansion-panel-header-title{
+//   padding-top: 2vw;
+// }
+
+
 .example-headers-align .mat-expansion-panel-header-description {
   flex-basis: 0;
 }
@@ -31,17 +35,36 @@
   align-items: center;
 }
 
-.example-headers-align .mat-form-field + .mat-form-field {
+.example-headers-align .mat-form-field+.mat-form-field {
   margin-left: 8px;
 }
 
-.my-panel { 
+.my-panel {
   width: 100%;
   display: flex;
   justify-content: space-between;
-} 
+}
+
 .my-panel button {
-    margin: 15px 25px;
-  } 
+  margin: 15px 25px;
+}
 
+#DropdownButton {
+  background-color: orange;
+  margin-top: 1vh;
+  height: 4vh;
+  width: 8vw;
+}
 
+#DropdownHeading {
+  margin-top: 17px;
+}
+
+// .ExpansionHeader {
+//   height: 3vw;
+//   background-color: rgb(235, 238, 253);
+// }
+
+.VerifyContent {
+  margin-top: 10px;
+}

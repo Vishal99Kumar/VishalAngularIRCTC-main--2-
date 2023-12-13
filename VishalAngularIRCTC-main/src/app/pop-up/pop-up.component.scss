@@ -14,8 +14,9 @@
 
 }
 
-.close-icon{
+.close-icon {
     font-size: 3rem !important;
+    margin-right: -9vw;
 }
 
 .app-content {
@@ -42,7 +43,7 @@
 
 //     height: auto;
 // }
-.testScroll{
+.testScroll {
     max-height: 19rem;
     overflow-y: auto;
 }
@@ -51,15 +52,15 @@
 #close {
     position: fixed;
     top: 10px;
-    right:5px;
-    color:white;
+    right: 5px;
+    color: white;
     cursor: pointer;
     padding-right: 5rem !important;
     color: black;
     // background-color: aqua;
 }
 
-@media only screen and (max-device-width: 990px){
+@media only screen and (max-device-width: 990px) {
     .profile-container {
         width: 19rem;
     }

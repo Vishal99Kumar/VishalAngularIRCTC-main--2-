@@ -1,16 +1,16 @@
 <mat-accordion class="example-headers-align" multi>
-    <!-- #enddocregion multi -->
-    <mat-expansion-panel>
-      <mat-expansion-panel-header  style="background-color: olive;">
-        <!-- <div class="my-panel"  (click)="$event.stopPropagation();"> -->
-          <h3>My Bookings !!!!</h3>
-   <!-- <button mat-stroked-button (click)="myButton()">my button</button> -->
-        <!-- </div> -->
-      </mat-expansion-panel-header>
-  
-      <div><span>Please verify your Flight PNR to see your bookings.</span>
-        <button mat-raised-button color="primary">Book Here</button>
-      </div>
-    </mat-expansion-panel>
-  </mat-accordion>
-  
+  <!-- #enddocregion multi -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header class="ExpansionHeader" style="background-color: rgb(235, 238, 253); 
+              height: 1vw; padding: 1vw;">
+      <!-- <div class="my-panel"  (click)="$event.stopPropagation();"> -->
+      <h3 id="DropdownHeading">My Bookings !!!!</h3>
+      <!-- <button mat-stroked-button (click)="myButton()">my button</button> -->
+      <!-- </div> -->
+    </mat-expansion-panel-header>
+
+    <div class="VerifyContent"><span>Please verify your Flight PNR to see your bookings</span>
+      <button mat-raised-button color="primary" id="DropdownButton">Book Here</button>
+    </div>
+  </mat-expansion-panel>
+  <!-- </mat-accordion> -->

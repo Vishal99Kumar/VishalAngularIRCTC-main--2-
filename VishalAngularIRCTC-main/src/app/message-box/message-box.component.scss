@@ -16,7 +16,7 @@ input {
   background-color:rgba(135, 188, 245, 0.61) ;
   border-radius: 5px;
   padding: 8px;
-  margin:7px;
+  margin:15px;
   border-radius: 8px 8px 0px;
   top: 70px;
   right: 490px;
@@ -128,7 +128,7 @@ ul {
 .message-input-form {
   display: flex;
   align-items: center; 
-  background-color: rgba(40, 92, 157, 0.61);
+  background-color: #013976 ;
   height: 60px;
   padding: 10px 20px; 
 }
@@ -136,4 +136,5 @@ ul {
 .testScroll{
   max-height: 26.8rem;
   overflow-y: auto;
+  width: 25rem;
 }

@@ -17,7 +17,7 @@
 <div id="bootomText">
 <form (ngSubmit)="sendMessage()" class="message-input-form">
     <!-- <label for="message">Enter your message:</label> -->
-  <input type="text" id="message" name="message" [(ngModel)]="message" placeholder="Chat with AI Chatbot"
+  <input type="text" id="message" name="message" autocomplete="off" [(ngModel)]="message" placeholder="Chat with AI Chatbot"
         (input)="onInputChange($event)">
     <!-- <button type="submit">Send</button> -->
 
